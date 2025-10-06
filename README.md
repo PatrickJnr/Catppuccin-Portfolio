@@ -99,12 +99,14 @@ Each theme uses the complete Catppuccin color palette with:
 - 14 accent colors (Rosewater, Flamingo, Pink, Mauve, Red, Maroon, Peach, Yellow, Green, Teal, Sky, Sapphire, Blue, Lavender)
 - Text and subtext colors for typography
 
-## 🚀 GitHub Upload
+## 🚀 Live Demo & GitHub Pages
 
-Perfect for showcasing on GitHub Pages:
+🎉 **View the live portfolio collection at:** [patrickjnr.github.io/Catppuccin-Portfolio/](https://patrickjnr.github.io/Catppuccin-Portfolio/)
+
+### Deploy to GitHub Pages:
 1. Upload all files to a GitHub repository
 2. Enable GitHub Pages in repository settings
-3. Share your portfolio URL
+3. Your portfolio will be live at: `https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/`
 
 ## 📄 License
 
