@@ -1,0 +1,139 @@
+/* Theme Selector Styles */
+:root {
+    --mocha-base: #1e1e2e;
+    --mocha-text: #cdd6f4;
+    --mocha-mauve: #cba6f7;
+    --mocha-surface0: #313244;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, var(--mocha-base) 0%, #181825 50%, #11111b 100%);
+    color: var(--mocha-text);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1000px;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, var(--mocha-mauve), #89b4fa, #f5c2e7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #a6adc8;
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.themes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.theme-card {
+    background: linear-gradient(135deg, var(--mocha-surface0), #45475a);
+    border-radius: 20px;
+    padding: 30px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.theme-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--mocha-mauve);
+    box-shadow: 0 20px 40px rgba(203, 166, 247, 0.2);
+}
+
+.theme-preview {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.theme-preview.latte {
+    background: linear-gradient(135deg, #eff1f5, #e6e9ef, #dce0e8);
+}
+
+.theme-preview.frappe {
+    background: linear-gradient(135deg, #303446, #292c3c, #232634);
+}
+
+.theme-preview.macchiato {
+    background: linear-gradient(135deg, #24273a, #1e2030, #181926);
+}
+
+.theme-preview.mocha {
+    background: linear-gradient(135deg, #1e1e2e, #181825, #11111b);
+}
+
+.theme-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.theme-description {
+    color: #a6adc8;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.theme-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: var(--mocha-mauve);
+    color: var(--mocha-base);
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.theme-button:hover {
+    background: #89b4fa;
+    transform: translateY(-2px);
+}
+
+.footer {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid var(--mocha-surface0);
+    color: #a6adc8;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .themes-grid {
+        grid-template-columns: 1fr;
+    }
+}
