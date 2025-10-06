@@ -47,12 +47,13 @@ This project includes four distinct themes based on the Catppuccin color palette
 ```
 /catppuccin-portfolio/
 ├── index.html          # Theme selector page
-├── latte.html          # Light theme portfolio
-├── frappe.html         # Medium theme portfolio
-├── macchiato.html      # Dark theme portfolio
-├── mocha.html          # Deep dark theme portfolio
 ├── README.md           # This file
-└── styles/
+├── themes/             # Portfolio theme pages
+│   ├── latte.html      # Light theme portfolio
+│   ├── frappe.html     # Medium theme portfolio
+│   ├── macchiato.html  # Dark theme portfolio
+│   └── mocha.html      # Deep dark theme portfolio
+└── styles/             # External CSS files
     ├── index.css       # Theme selector styles
     ├── latte.css       # Light theme styles
     ├── frappe.css      # Medium theme styles
